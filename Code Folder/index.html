@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> A.guile Photography- Photography Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
+    <style>
+        body {
+            background:linear-gradient(to right, gray, white);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #343a40;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px 20px;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .about-me p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .title {
+          font-family:'Times New Roman', Times, serif;
+        }
+
+        .parallax {
+          background-image: url(Landscape.jpg);
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          height: 500px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgb(0, 0, 0);
+          text-align: center;
+        }
+        .parallax h2 {
+          font-size: 2.5em;
+        }
+
+        .parallax1 {
+          background-image: url(CloseUp.jpg);
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          height: 500px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgb(0, 0, 0);
+          text-align: center;
+        }
+      
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="title">A.guile Photography</h1>
+    <p>Photography Portfolio</p>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="parallax">
+  <h1>
+    WELCOME
+  </h1>
+</div>
+
+<section id="portfolio" class="gallery">
+    <div class="container">
+        <h2 class="text-center mb-4">Portfolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="Natural Subframe.jpg" data-bs-target="#galleryModal" data-img-index="1" data-bs-toggle="modal" alt="Photo 1" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="Cemetary Final.jpg" data-bs-target="#galleryModal" data-img-index="2" data-bs-toggle="modal" alt="Photo 2" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+              <img src="Natural Subframe.jpg" data-bs-target="#galleryModal" data-img-index="3" data-bs-toggle="modal" alt="Photo 3" class="img-fluid">
+          </div>
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="btn btn-secondary btn-nav" data-direction="prev">&lt;</button>
+        <img src="Natural Subframe.jpg" alt="Photo 1" class="img-fluid">
+        <button type="button" class="btn btn-secondary btn-nav" data-direction="next">&gt;</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax1">
+  <h1>
+    WELCOME
+  </h1>
+</div>
+
+<section id="about-me" class="about-me">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="aboutmetxt"t>Im the greatest to ever live baby
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact</h2>
+        <p class="text-center">aidanguile22@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 A.Guile Photography - Photography Portfolio</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function ()  {
+            const modal = new boostrap.Modal(document.getElementById('galleryModal'), {
+              keyboard: true
+            });
+            let currentImgIndex = 0;
+            const totalImages = document.querySelectorAll('.gallery img').length;
+
+            const modalImage = document.querySelectorId('modalImage');
+            const btnNav = document.querySelectorAll('.btn-nav');
+
+            document.querySelectorAll('gallery img').forEach(function (img, index) {
+                img.addEventListener('click', function () {
+                  currentImgIndex = index;
+                  updateModalImage();
+                  modal.show();
+                });
+            });
+
+            btnNav.forEach(function (btn) {
+              btn.addEventListener('click', function () {
+                const direction = btn.getAttribute('data-sirection');
+                if (direction === 'prev') {
+                  currentImgIndex = (currentImgIndex -1 + totalImages) % totalImages;
+                } else {
+                  currentImgIndex = (currentImgIndex +1) % totalImages;
+                }
+                updateModalImage();
+              });
+            });
+          
+            function updateModalImage() {
+              const imgSrc = document.querySelectorAll('.gallery img')[currentImgIndex].src;
+              modalImage.src = imgSrc;
+            }
+            });
+        </script>
+</body>
+</html>
